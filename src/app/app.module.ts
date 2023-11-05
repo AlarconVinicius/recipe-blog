@@ -26,6 +26,7 @@ import { MetodoDePagamentoComponent } from './pages/metodo-de-pagamento/metodo-d
 import { BancoComponent } from './pages/banco/banco.component';
 import { RecipeComponent } from './pages/admin-pages/recipe/recipe.component';
 import { AddUpdRecipeComponent } from './pages/admin-pages/add-upd-recipe/add-upd-recipe.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { AddUpdRecipeComponent } from './pages/admin-pages/add-upd-recipe/add-up
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
