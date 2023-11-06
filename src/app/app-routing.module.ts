@@ -13,10 +13,7 @@ import { PagesRegisterComponent } from './pages/pages-register/pages-register.co
 import { UsersProfileComponent } from './pages/users-profile/users-profile.component';
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { RelatorioComponent } from './pages/relatorio/relatorio.component';
-import { CategoriaComponent } from './pages/categoria/categoria.component';
-import { MetodoDePagamentoComponent } from './pages/metodo-de-pagamento/metodo-de-pagamento.component';
-import { BancoComponent } from './pages/banco/banco.component';
+import { CategoryComponent } from './pages/admin-pages/category/category.component';
 import { LoginComponent } from './pages/auth-pages/login/login.component';
 import { RecipeComponent } from './pages/admin-pages/recipe/recipe.component';
 import { AddUpdRecipeComponent } from './pages/admin-pages/add-upd-recipe/add-upd-recipe.component';
@@ -35,10 +32,7 @@ const routes: Routes = [
   { path: 'user-profile', component: UsersProfileComponent },
   { path: '', component: DashboardComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'relatorio', component: RelatorioComponent },
-  { path: 'categoria', component: CategoriaComponent },
-  { path: 'metodo-de-pagamento', component: MetodoDePagamentoComponent },
-  { path: 'banco', component: BancoComponent },
+  { path: 'categorias', component: CategoryComponent },
   { path: 'login', component: LoginComponent },
   { path: 'receitas', component: RecipeComponent },
   { path: 'receitas/adicionar', component: AddUpdRecipeComponent },
