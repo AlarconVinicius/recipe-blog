@@ -10,11 +10,13 @@ import { RecipeAdd } from 'src/app/models/blog/recipe/recipe-add';
 })
 export class AddUpdRecipeComponent implements OnInit {
 
+  title: string = '';
+  recipeId: string = '';
   recipe: RecipeAdd = {
     title: '',
     content: '',
-    blogId: 'blogId',
-    categoryId: 'categoryId',
+    blogId: "2a2ff613-6f3b-4dd8-9fd6-a2f824b67b62",
+    categoryId: "6d66cbf6-8356-4a3b-bf2e-79b6cdd151ad",
     difficulty: Difficulty.Easy,
     preparationTime: '',
     servings: 1,
@@ -35,9 +37,16 @@ export class AddUpdRecipeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.getPageTitle();
   }
   
-
+  getPageTitle(){
+    if (this.recipeId != ''){
+      this.title = "Editar"
+    } else {
+      this.title = "Adicionar"
+    }
+  }
   saveRecipe() {
     const recipe: RecipeAdd = {
       title: this.recipe.title,
