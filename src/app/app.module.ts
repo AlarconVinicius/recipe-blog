@@ -15,7 +15,6 @@ import { IconsBoxiconsComponent } from './components/icons-boxicons/icons-boxico
 import { UsersProfileComponent } from './pages/users-profile/users-profile.component';
 import { PagesFaqComponent } from './pages/pages-faq/pages-faq.component';
 import { PagesContactComponent } from './pages/pages-contact/pages-contact.component';
-import { PagesRegisterComponent } from './pages/pages-register/pages-register.component';
 import { PagesError404Component } from './pages/pages-error404/pages-error404.component';
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -24,6 +23,7 @@ import { AddUpdRecipeComponent } from './pages/admin-pages/add-upd-recipe/add-up
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/auth-pages/login/login.component';
 import { CategoryComponent } from './pages/admin-pages/category/category.component';
+import { RegisterComponent } from './pages/auth-pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -40,14 +40,14 @@ import { CategoryComponent } from './pages/admin-pages/category/category.compone
     UsersProfileComponent,
     PagesFaqComponent,
     PagesContactComponent,
-    PagesRegisterComponent,
     PagesError404Component,
     
     DashboardComponent,
     RecipeComponent,
     AddUpdRecipeComponent,
     LoginComponent,
-    CategoryComponent
+    CategoryComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

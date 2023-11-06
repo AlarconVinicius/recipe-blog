@@ -9,12 +9,12 @@ import { TablesGeneralComponent } from './components/tables-general/tables-gener
 import { PagesContactComponent } from './pages/pages-contact/pages-contact.component';
 import { PagesError404Component } from './pages/pages-error404/pages-error404.component';
 import { PagesFaqComponent } from './pages/pages-faq/pages-faq.component';
-import { PagesRegisterComponent } from './pages/pages-register/pages-register.component';
 import { UsersProfileComponent } from './pages/users-profile/users-profile.component';
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CategoryComponent } from './pages/admin-pages/category/category.component';
 import { LoginComponent } from './pages/auth-pages/login/login.component';
+import { RegisterComponent } from './pages/auth-pages/register/register.component';
 import { RecipeComponent } from './pages/admin-pages/recipe/recipe.component';
 import { AddUpdRecipeComponent } from './pages/admin-pages/add-upd-recipe/add-upd-recipe.component';
 
@@ -28,7 +28,7 @@ const routes: Routes = [
   { path: 'pages-contact', component: PagesContactComponent },
   { path: 'pages-error404', component: PagesError404Component },
   { path: 'pages-faq', component: PagesFaqComponent },
-  { path: 'pages-register', component: PagesRegisterComponent },
+  { path: 'registrar', component: RegisterComponent },
   { path: 'user-profile', component: UsersProfileComponent },
   { path: '', component: DashboardComponent },
   { path: 'dashboard', component: DashboardComponent },
